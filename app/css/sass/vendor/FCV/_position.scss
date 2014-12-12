@@ -1,0 +1,60 @@
+/**
+ * @class FCV
+ */
+
+
+
+/**
+ * Mixin for absolute, fixed or relative positioning.
+ *
+ * Examples:
+ *
+ *     // this will position the item absolute with top: 0; and left: 0;
+ *     .item1 { @include position; }
+ *     
+ *     // this will position the item absolute with bottom: 50px; and right: 50px;
+ *     .item2 { @include position(50px, "BR"); }
+ *     
+ *     // this will position the item fixed with top: 10px; and right: 40px;
+ *     .item3 { @include position(10px 40px, "TR", fixed); }
+ * 
+ * @param {Array} [$coordinates=0] Sets the coordinates.
+ * @param {String} [$align="TL"] Sets the alignment of the positioning.
+ * Possible values:
+ * 
+ *   - "TL": top left
+ *   - "TR": top right
+ *   - "BL": bottom left
+ *   - "BR": bottom right
+ *   
+ * @param {String} [$position=absolute] Sets the css attribute `position`
+ */
+@mixin position($coordinates: 0, $align: "TL", $position: absolute) {
+  display: inline-block;
+  position: $position;
+
+  $first: $coordinates;
+  $second: $coordinates;
+
+  @if (length($coordinates) == 2) {
+    $first: nth($coordinates, 1);
+    $second: nth($coordinates, 2);
+  }
+
+  @if $align == 'TL' {
+    top: $first;
+    left: $second;
+  }
+  @else if $align == 'TR' {
+    top: $first;
+    right: $second;
+  }
+  @else if $align == 'BL' {
+    bottom: $first;
+    left: $second;
+  }
+  @else if $align == 'BR' {
+    bottom: $first;
+    right: $second;
+  }
+}

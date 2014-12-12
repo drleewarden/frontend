@@ -1,0 +1,27 @@
+<p class="col-md-3">
+    <label for="searchAll">search all</label><br/><input id="searchAll" type="text" ng-model="allFilter" placeholder="Search..."/>
+</p>
+<p class="col-md-3">
+    <label for="searchName">search name</label><br/><input id="searchName" type="text" ng-model="nameFilter" placeholder="Search..."/>
+</p>
+
+<br/>
+<table class="col-md-12">
+    <thead>
+    <tr><th colspan="4">Drivers Championship Standings</th></tr>
+
+    </thead>
+    <br>
+    <div id="loading" class="col-md-12">Loading Drivers...</div>
+    <tbody>
+    <tr ng-repeat="driver in driversList | filter: searchFilter | filter: allFilter">
+        <td>{{$index + 1}}</td>
+        <td>
+            <img ng-src="app/img/flags/{{driver.Driver.nationality}}.png" />
+            {{driver.Driver.givenName}}&nbsp;{{driver.Driver.familyName}}
+        </td>
+        <td>{{driver.Constructors[0].name}}</td>
+        <td>{{driver.points}}</td>
+    </tr>
+    </tbody>
+</table>

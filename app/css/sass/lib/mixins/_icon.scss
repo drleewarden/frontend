@@ -1,0 +1,41 @@
+@mixin icon($name, $dimensions, $hover:false, $hover-padding: 2px) {
+
+  $first: $dimensions;
+  $second: $dimensions;
+
+
+  @if (length($dimensions) == 2) {
+    $first: nth($dimensions, 1);
+    $second: nth($dimensions, 2);
+  }
+
+  .icon-#{$name} {
+    display: inline-block;
+    width: $first;
+    height: $second;
+    @if $hover == false {
+      background-size: $first $second;
+    }
+    @else {
+      background-size: $first ($second * 2 + $hover-padding);
+    }
+  }
+
+  @if $hover == true {
+    .icon-#{$name}-hover {
+      background-position: 0 (-1 * $second - $hover-padding);
+    }
+  }
+}
+
+
+@mixin icon-hover($name) {
+  &:hover .icon-#{$name} {
+    @extend .icon-#{$name}-hover;
+  }
+}
+
+@mixin main-icon($path, $heig, $widt, $p1, $p2 ){
+  background: url('../images/icons/'+ $path)  $p1 $p2 no-repeat;
+  background-size: $widt $heig;
+}

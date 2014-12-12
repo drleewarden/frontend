@@ -1,0 +1,26 @@
+////////////
+// Google Maps Styling
+///////////
+
+#map-canvas{
+
+}
+.siteNotice {
+  height: 130px;
+  width: 300px;
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/3/3a/Wheat_harvest.jpg);
+  background-size: 300px;
+}
+.firstHeading, .bodyContent {
+  padding: 10px 0 0 10px;
+  width: 270px;
+}
+.gm-style-iw{
+  left: 0px !important;
+  right: 0px !important;
+}
+.gm-style-iw, .gm-style-iw div{
+  overflow: hidden !important;
+  margin-top: -8px !important;
+  width: 300px !important;
+}

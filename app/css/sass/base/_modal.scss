@@ -1,0 +1,423 @@
+.form-control{
+  height: 34px !important;
+  font-size: 14px !important;
+  option{
+    width: 312px;
+  }
+}
+.selected-grey{
+  background: #0078c1 !important;
+  color: white !important;
+}
+.list-content{
+  box-shadow: black 0px 3px 3px;
+  margin-top: -7px;
+
+&.list-content-main{
+  ul{
+    width: 287px;
+  }
+}
+  ul{
+    width: 309px;
+    margin: 7px 1px 0;
+    padding: 0;
+  }
+
+  li.title{
+    background: $blue-inner;
+    padding: 10px;
+    margin: 0 0px 0 0px;
+    text-indent: 5px;
+    cursor: auto;
+    font-style: italic;
+    &:hover{
+      background: #f2f2f2;
+      color: black;
+    }
+  }
+
+  li{
+    background: white;
+    padding: 7px 20px 10px;
+    margin: 0 0px 0 0px;
+    cursor: pointer;
+
+    &:hover{
+      background: #0078c1;
+      color: white;
+    }
+  }
+
+  position: absolute;
+  width: 310px;
+}
+.modal-backdrop {
+  position: fixed;
+  z-index: 100;
+}
+.modal-header {
+    padding: 0px;
+    margin: 0;
+    border-bottom: 0px solid #e5e5e5;
+    min-height: 34px;
+
+  .close {
+    margin: -34px 4px;
+    background-image: url(../images/icons/close-grey.png);
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    opacity: 1;
+    border-radius: 25px;
+    height: 32px;
+    background-size: 32px;
+    width: 32px;
+    border: 0px solid white;
+
+    div{
+      margin-top: -5px;
+    }
+  }
+
+}
+////////////////
+// favourites pop up
+///////////////
+#favouritesModal{
+  .modal-content {
+    background-color: #ffffff;
+    width: 580px;
+    h3{
+      color: #0066cc;
+      font-size: 18px;
+    }
+    h1{
+      color: black;
+      margin: 0 0 -7px;
+    }
+  }
+  .modal-header {
+
+    .close {
+      color: black;
+      border: 0px solid black;
+      margin: 5px 5px;
+      div{
+        margin-top: -5px;
+      }
+    }
+  }
+}
+////////////////
+// email pop up
+///////////////
+#emailModal{
+
+  #mailStatusMsg h3{
+    width: 300px;
+    margin: 0 0px;
+    color: #0D6126;
+    &.error-submit{
+      color: #a94442;
+    }
+  }
+
+  .modal-title {
+    margin: 20px;
+    line-height: 1.42857;
+  }
+  .or{
+    color: black;
+    margin: -43px 0 0 245px;
+    background-color: #ecf5fc;
+    width: 50px;
+    padding: 15px 15px 20px;
+    font-style: italic;
+  }
+  .line{
+
+    hr{
+      border-top: 1px solid #808080;
+      margin-bottom: 20px;
+    }
+  }
+  button.sub-arrow {
+    margin: 0px 0 15px 130px;
+    font-family: futura-pt,sans-serif;
+  }
+  .modal-footer {
+    padding: 0 21px;
+    text-align: right;
+    border-top: 0px solid #e5e5e5;
+  }
+  .email-name{
+    float: left;
+    margin: 6px 0px 0 0;
+    width: 100px;
+  }
+  .form-control{
+    width: 438px;
+    margin-bottom: 20px;
+    height: 34px;
+  }
+  .textarea{
+    height: 88px !important;
+    float: right !important;
+    overflow-y: scroll !important;
+  }
+  .modal-header {
+
+    .close {
+      margin: -19px 4px;
+      background-image: url(../images/icons/close-grey.png);
+      float: right;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1;
+      color: white;
+      opacity: 1;
+      border-radius: 25px;
+      height: 32px;
+      background-size: 32px;
+      width: 32px;
+
+      div{
+        margin-top: -5px;
+      }
+    }
+  }
+  .modal-content {
+    background-color: rgb(236,245,252);
+    width: 580px;
+    height: 458px;
+  }
+}
+
+////////////////
+// landing page pop up
+///////////////
+#mainModal, #mModal{
+  .input-group-btn{
+    float: right;
+    margin: -34px 36px;
+    .btn {
+      padding: 8px 12px 5px;
+      font-size: 14px;
+      line-height: 1.42857;
+      @include border-radius4(0px, 4px, 4px, 0px);
+      height: 34px;
+    }
+  }
+  .modal-content {
+    height: 662px;
+  }
+  .modal-header {
+    .close{
+      margin: -34px 4px;
+      background-image: url(../images/icons/close-white.png);
+      float: right;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1;
+      color: white;
+      opacity: 1;
+      border-radius: 25px;
+      height: 32px;
+      background-size: 32px;
+      width: 32px;
+      border: 0px solid white;
+    }
+  }
+
+  .img-modal{
+    background: white;
+    padding: 7px 0 7px;
+    margin: 35px 20px 15px;
+
+    .ccholder{
+      float: right;
+      color: #9aa4c1;
+      position: absolute;
+      right: 0;
+      font-size: 14px;
+      border-left: solid 15px white;
+      border-top: 47px solid $header-dark-blue;
+      height: 0;
+      width: 282px;
+      margin: -40px 20px 0 0;
+      z-index: 0;
+    }
+    h2{
+      font-size: 24px;
+      margin: -43px 30px;
+      position: absolute;
+      right: 0;
+      color: white;
+    }
+    img{
+      margin-left: 13px;
+      padding: 0;
+    }
+  }
+}
+
+.modal-content{
+  background-color: black;
+  width: 720px;
+
+  .modal-body {
+    position: relative;
+    padding: 0 20px 10px;
+  }
+  section{
+    height: 600px;
+  }
+  h1{
+    font-size: $main-h2;
+  }
+  h2{
+    color: white;
+    font-size: $main-h3;
+    margin: 20px 0 5px;
+  }
+  label{
+    color: white;
+    font-size: $main-h3;
+    margin: 20px 0 5px;
+    font-weight: normal;
+  }
+  hr{
+    margin-top: 20px;
+    color: white;
+  }
+  button.sub-arrow{
+    margin: 23px 0 15px 130px;
+  }
+
+  .line{
+    margin-top: 30px;
+  }
+  .or{
+    color: white;
+    margin: -43px 0 0 122px;
+    background-color: $blue-tab;
+    width: 50px;
+    padding: 15px 15px 0;
+    font-style: italic;
+  }
+
+  /////////////////////////
+  // carousel
+  ////////////////////////
+  .carousel{
+    margin: 15px 0 0;
+
+    .carousel-control.right span{
+      background-image: url(../images/icons/arrow-right.png);
+      width: 25px;
+      height: 40px;
+      opacity: 1;
+      position: absolute;
+      top: 40%;
+      z-index: 5;
+      display: inline-block;
+      right: 17%;
+      background-size: 24px;
+    }
+
+    .carousel-control.left span{
+      background-image: url(../images/icons/arrow-left.png);
+      width: 23px;
+      height: 40px;
+      opacity: 1;
+      position: absolute;
+      top: 40%;
+      z-index: 5;
+      display: inline-block;
+      left: 17%;
+      background-size: 23px;
+    }
+
+    .carousel-indicators {
+      text-align: right;
+      bottom: 0px;
+      left: 60%;
+      li{
+        background: white;
+        border: 0px solid #fff;
+      }
+      .active{
+        background-color: $blue-tab;
+        border: 0px solid #fff;
+      }
+    }
+  }
+  .carousel-inner{
+    background-color: black;
+
+    .item {
+      overflow: hidden;
+      height: 220px;
+
+    }
+    h2.trending-2{
+      padding: 0;
+      margin: 0 20px;
+      text-align: left;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 0 0 23px;
+      text-align: left;
+      opacity: 1;
+      color: white;
+      margin-left: 20px;
+      z-index: 4900;
+      font-size: 14px;
+      line-height: 23px;
+      width: 260px;
+    }
+  }
+
+  .carousel-caption {
+    left: 0;
+    right: 0;
+    padding: 10px 0 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  }
+
+
+}
+.left-popup{
+  background-color: $blue-tab;
+  width: 332px;
+  float: left;
+  padding: 0;
+  height: 537px;
+
+  .inner-left-popup{
+    margin: 10px;
+
+  }
+}
+.right-popup{
+  background-color: white;
+  width: 332px;
+  float: right;
+  padding: 0 0 10px 0;
+
+
+  .inner-right-popup{
+
+    h1{
+      color: black;
+    }
+    margin: 10px;
+
+  }
+}

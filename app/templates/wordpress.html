@@ -1,0 +1,46 @@
+hello there
+<div id="posts"> LOADING...</div>
+<!--<div ng-repeat="message in messages">-->
+    <!--<p><b>title: </b>{{message.title}}</p>-->
+    <!--<p><b>date: </b>{{message.date}}</p>-->
+    <!--<p><b>content: </b>{{message.content}}</p>-->
+    <!--<p><b>image: </b></p><img ng-src="{{message.attachments[0].url}}" width="100" height="100" />-->
+<!--</div>-->
+<div>
+    <p>
+        Getting version from the scope: {{ scopedAppVersion }}
+
+    <form>
+        search: <input id="isotopeSearch"></input>
+        <!--title:<input ng-model="post-title"></input>-->
+        <!--comment:<input ng-model="post-comments"></input>-->
+        <button type="submit">submit</button>
+    </form>
+    </p>
+</div>
+
+<div id="isotope">
+
+    <div  on-finish-render ng-repeat="post in messages" ng-class='{huge:$first}' class="col-md-3 col-sml-12 {{post.tags[0].title}} id-{{post.$$hashKey}} {{post.title_plain}} item element-item seen flip-container" ontouchstart="this.classList.toggle('click');">
+
+        <div class=" inner flipper" >
+
+            <div class="post-holder front" href="{{post.url}}" >
+                <a href="{{post.url}}" ng-click="blogClicked(post.title_plain, 'id-'+post.$$hashKey)" class="id-{{post.$$hashKey}} btn btn-default btn-lg" >{{post.title_plain}}</a>
+                <div class="post-img" style="background-color: coral">
+
+                    <div class="delete" ng-click="deleteItem($index)"><i class="fa fa-times-circle"></i></div>
+                    <img ng-src="{{ post.attachments[0].url }}"/>
+                </div>
+            </div>
+            <div class="back" data-color="{{post.custom_fields.colour | htmlToPlaintext}}" style="background-color: {{post.custom_fields.colour | htmlToPlaintext}}; ">
+                <div class="delete" ng-click="deleteItem($index)"><i class="fa fa-times-circle"></i></div>
+                <div class="inner-back">
+                    <p><b>Client:</b> {{post.custom_fields.Client | htmlToPlaintext}}</p>
+                    <p><b>Role:</b> {{post.custom_fields.Role | htmlToPlaintext}}</p>
+                    <p><b>Technologies used:</b> {{post.custom_fields.Technologies  | htmlToPlaintext}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- app angular injection end -->
+    </div>

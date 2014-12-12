@@ -1,0 +1,77 @@
+/**
+ * @class FCV
+ */
+/**
+ * @class FCV.util.Breakpoints
+ */
+/**
+ * Simplifies the use of breakpoints.
+ * 
+ * Set up some breakpoints as shown in `{@link #breakpoints-init}` and then use it like this:
+ *
+ *     #page {
+ *       @include breakpoint($screen-md) {
+ *         width: 960px;
+ *       }
+ *     }
+ * 
+ * @param {String} $breakpoint
+ */
+/**
+ * Sets the styles for the #breakpoints div, that is used to detect the current breakpoint.
+ *
+ * Example:
+ *     
+ *     $mobile      : 0px;
+ *     $mobile-only : $mobile 479px;
+ *     $handheld    : 480px;
+ *     $tablet      : 768px;
+ *     $desktop     : 1024px;
+ *     
+ *     @include breakpoints-init($mobile $handheld $tablet $desktop);
+ *
+ *     // When used with Twitter Bootstrap:
+ *     @include breakpoints-init($screen-xs $screen-sm $screen-md $screen-lg);
+ * 
+ * @param {String[]} $breakpoints List of breakpoints
+ */
+/**
+ * @class FCV
+ */
+/**
+ * Mixin for absolute, fixed or relative positioning.
+ *
+ * Examples:
+ *
+ *     // this will position the item absolute with top: 0; and left: 0;
+ *     .item1 { @include position; }
+ *     
+ *     // this will position the item absolute with bottom: 50px; and right: 50px;
+ *     .item2 { @include position(50px, "BR"); }
+ *     
+ *     // this will position the item fixed with top: 10px; and right: 40px;
+ *     .item3 { @include position(10px 40px, "TR", fixed); }
+ * 
+ * @param {Array} [$coordinates=0] Sets the coordinates.
+ * @param {String} [$align="TL"] Sets the alignment of the positioning.
+ * Possible values:
+ * 
+ *   - "TL": top left
+ *   - "TR": top right
+ *   - "BL": bottom left
+ *   - "BR": bottom right
+ *   
+ * @param {String} [$position=absolute] Sets the css attribute `position`
+ */
+/**
+ * @class FCV
+ */
+/**
+ * element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/**
+ * Turns off the element-invisible effect.
+ */
+/**
+ * 
+ */

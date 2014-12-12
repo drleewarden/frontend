@@ -1,0 +1,143 @@
+.compass-icon{
+  background: url(../images/icons/glyphicons_060_compass.png);
+  width: 24px;
+  height: 24px;
+  background-size: 25px;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  font-family: futura;
+}
+
+.nav-me{
+  vertical-align: top;
+  line-height: 1;
+  font-family: futura-pt,sans-serif;
+  font-size: 22px;
+}
+button.sub-arrow{
+  background-color: #ffb42d;
+  color: #333;
+  margin: 0 -3px;
+  width: auto;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  text-align: left;
+  height: 28px;
+  background: transparent url(../images/logo/nav-arrow.png) no-repeat top right;
+  font-size: 18px;
+  padding: 4px 18px 4px 10px;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: middle;
+  filter: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding-right: 22px;
+  height: 34px;
+  background-image: url(../images/logo/nav-arrow-fat.png);
+}
+#container-vu{// contain to vu
+
+  nav.top{
+    font-size: $aside-h2;
+    background:  #123955;
+
+    a{
+      color: white;
+    }
+
+    .contact {
+      float: right;
+      color: rgb(154,164,193);
+      right: 0;
+      font-size: $nav-li;
+      border-left: solid 15px #123955;
+      border-top: 40px solid #0c2538;
+      height: 0;
+      width: 580px;
+      margin-top: -50px;
+      z-index: 0;
+
+      a{
+        margin-top: -53px;
+        margin: -30px 30px;
+        float: right;
+        color: white;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .active{
+        color: #9aa4c1;
+      }
+    }
+
+    ul{
+      position: relative;
+      height: 43px;
+      z-index: 10;
+      margin-left: -21px;
+      width: 400px;
+    }
+
+    li{
+      padding: 15px 18px 15px;
+      display: inline;
+      vertical-align: bottom;
+      font-size: $nav-li;
+      color: white;
+      &.active{
+        background: white;
+        color: #0078c1;
+      }
+    }
+  }
+  img.logo{
+    padding: 30px 0;
+    margin-left: 31px;
+  }
+  header{
+    background: $header-dark-blue;
+    padding: $gutterDesktop;
+    z-index: 200;
+
+  .list-content{
+    margin: 0;
+    width: 288px;
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+    h1{
+      width: 500px;
+      font-size: 44px;
+      padding: 0 0 30px;
+      margin: 0;
+      float: left;
+      display: block;
+      clear: both;
+    }
+    span.help a{
+      float: right;
+      color: white;
+    }
+    .top-search{
+      clear: both;
+      .form-control{
+        width: 290px;
+        float: left;
+        height: 34px;
+      }
+
+
+    }
+  }
+}

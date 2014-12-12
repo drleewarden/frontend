@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////
+// layout breakpoints, spacing, gutters
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+// layout breakpoints, spacing, gutters
+////////////////////////////////////////////////////////////
+// Rhythm spacing, use this for all margin/padding
+$spacing: 20px;
+
+// Container gutter
+$gutterMobile: 30px; //(20px per column + sides) need to use fluid value
+$gutterTablet-p: 30px; //(24px per column + sides) neeed to use fluid value
+$gutterTablet-l: 30px;
+$gutterDesktop: 30px;
+$gutterInners: 15px;
+
+//layout-mobile [mobile portrait/landscape]
+$layout-mobile-max: 639px;
+$layout-mobile-min: 320px;
+$layout-mobile-width: 100%;
+$layout-mobile-columns: 4;
+$layout-mobile-gutter: $gutterMobile;
+
+//layout-tablet-p [tablet portrait]
+$layout-tablet-p-min: 640px;
+$layout-tablet-p-max: 767px;
+$layout-tablet-p-width: 100%;
+$layout-tablet-p-columns: 6;
+$layout-tablet-p-gutter: $gutterTablet-p;
+
+//layout-tablet-l [tablet landscape]
+$layout-tablet-l-min: 768px;
+$layout-tablet-l-max: 989px;
+$layout-tablet-l-width: 718px;
+$layout-tablet-l-columns: 6;
+$layout-tablet-l-gutter: $gutterTablet-l;
+
+//layout-desktop [desktop]
+$layout-desktop-min: 990px;
+$layout-desktop-width: 940px;
+$layout-desktop-columns: 12;
+$layout-desktop-gutter: $gutterDesktop;
+
+//Paths
+$img:'../img/';
+$svg:'../images/svg';
+
+//Menu ul widths
+$menu_dsktp: 990px;
+$menu_tblt: 708px;
+
+//** center widths of menu and image slider
+$center-xs: 320px;
+$center-sm: 708px;
+$center-lg: 990px;
+
+////////////////////////////////////////////////////////////
+// base features for layout theme
+////////////////////////////////////////////////////////////
+
+// fonts
+$header-h1: 46px;
+$main-h1: 30px;
+$main-h2: 24px;
+$main-h3: 18px;
+$main-h4: 14px;
+$nav-li: 14px;
+$para: 12px;
+$pagnation: 10px;
+
+$aside-h2: 22px;
+
+// colours
+$header-dark-blue: rgb(40,75,96);
+$borderColor: rgb(193,193,193);
+$lightgreen: rgb(38,113,19);
+$blue-light: #2a6496;
+$blue-tab: #1C78C2;
+$blue-inner: rgb(242,242,242);
+$blue-aside: #21455c;

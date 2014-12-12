@@ -1,0 +1,22 @@
+/**
+ * @class Site
+ */
+
+// import all FCV mixins or just FCV/util/Breakpoints
+// then use @include breakpoint($breakpoint) { ... } to use the following breakpoints
+// if you want to use FCV.util.Breakpoints (JS) you have to '@include breakpoints-init($bp1 $bp2 ...)' at some point (preferably in Site/layout/_layout.scss)
+// you can find more details about the `FCV.util.Breakpoints` class in the docs
+
+/** Breakpoint */
+$screen-xs-only   : 0 $screen-xs-max;
+
+/** Breakpoint */
+$screen-sm-only   : $screen-sm $screen-sm-max;
+
+/** Breakpoint */
+$screen-md-only   : $screen-md $screen-md-max;
+
+// Break points for individual layout changes per element
+$break_tablet-p: "min-width: " + $layout-tablet-p-min;
+$break_tablet-l: "min-width: " + $layout-tablet-l-min;
+$break_desktop: "min-width: " + $layout-desktop-min;

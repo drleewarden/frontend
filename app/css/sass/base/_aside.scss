@@ -1,0 +1,122 @@
+.inside-shadow{
+  -moz-box-shadow:    inset -2px -2px 5px #C2C2C2;
+  -webkit-box-shadow: inset -2px -2px 5px #C2C2C2;
+  box-shadow: inset -2px -2px 5px #C2C2C2;
+ // background: #ECEDEA;
+}
+aside.side-nav{
+  margin: 30px 15px 30px 30px;
+  @include border-line(1px, $borderColor);
+  float: left;
+  background: $blue-inner;
+
+  .slider-range-salary, .slider-range-score{
+    width: 250px;
+    margin: 10px auto !important;
+  }
+
+  .fa-caret-down{
+    margin: 0 9px 0 3px;
+  }
+
+  .fa-caret-right{
+    margin: 0 6px 0 3px;
+  }
+
+  .ui-widget-content {
+    background: #9aa4ad;
+    margin: 10px 0;
+  }
+
+  .clear{
+    opacity: 1;
+  }
+
+  #score, #salary{
+    max-height: 200px;
+    overflow: visible;
+    width:270px;
+  }
+
+  .toggler{
+    max-height: 109px;
+    overflow-y: auto;
+    margin-top: 7px;
+
+    input{
+      margin: 0px 0 10px;
+    }
+
+    .litem{
+      margin: -10px 0px 15px 10px;
+      vertical-align: top;
+      line-height: 18px;
+      padding-top: 10px;
+      width: 230px;
+      display: inline-block;
+      word-wrap: break-word;
+      font-weight: 100;
+    }
+  }
+
+.amount{
+    font-weight: bold;
+
+    .au{
+      font-weight: normal;
+    }
+  }
+  hr{
+    border-top: 1px solid $borderColor;
+    margin-top: 18px;
+    margin-bottom: 10px;
+  }
+  .amount-dollar{
+    float: right;
+  }
+  .amount-right{
+    float: right;
+  }
+  .side-nav-container{
+    padding: 10px;
+    width: 300px;
+
+    a{
+      float: right;
+      margin-top: 5px;
+    }
+    &.refine a{
+      margin-top: -5px;
+    }
+
+    h2{
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h3{
+      color: rgb(0,120,193);
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: $main-h3;
+      cursor: pointer;
+    }
+
+    .aside-heading{
+      float: none;
+      color: rgb(0,120,193);
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: $main-h3;
+      cursor: pointer;
+    }
+  }
+  .ui-widget-content{
+
+    background: rgb(154,164,173);
+  }
+  .ui-widget-header{
+    background: rgb(18,57,85);
+  }
+}

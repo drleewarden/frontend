@@ -1,0 +1,32 @@
+// Body
+body{
+  font-family: "Helvetica Neue", Helvetica, "nimbus-sans", Arial, sans-serif;
+  font-size: 14px;
+}
+// headings
+h2{
+  font-family:"Helvetica Neue",Helvetica,"nimbus-sans", Arial, sans-serif;
+  font-weight: 500;
+  font-size: '';
+  margin-bottom: 18px;
+  line-height: 35px;
+}
+#container-vu header h1{
+  font-family: "futura-pt", sans-serif;
+}
+// lists
+li{
+  list-style-type: none;
+}
+aside.side-nav{
+  ul{
+    h2{
+      color: #0078c1;
+      font-size: $aside-h2;
+    }
+    li{
+
+      border-bottom: 1px solid #0078c1;
+    }
+  }
+}
